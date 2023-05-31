@@ -1,0 +1,49 @@
+{
+  "name": "krateZ",
+  "version": "1.3.3",
+  "description": "krateZ Client for Krunker",
+  "main": "./app/main.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "startd": "npm start -- --debug",
+    "startd-linux": "ELECTRON_ENABLE_STACK_DUMPING=1 ELECTRON_ENABLE_LOGGING=true npm start -- --debug",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "release": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kratez47/kratez.git"
+  },
+  "keywords": [
+    "Krunker"
+  ],
+  "author": "krateZ, krateZ client team",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/kratez47/krateZ/issues"
+  },
+  "homepage": "http://kratezclient.rf.gd",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-private-methods": "^7.13.0",
+    "@types/node": "^14.17.11",
+    "electron": "^9.4.4",
+    "electron-builder": "^23.6.0",
+    "eslint": "^8.7.0"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "electron-localshortcut": "^3.2.1",
+    "electron-log": "^4.3.5",
+    "electron-store": "^8.0.0",
+    "electron-updater": "^5.0.0",
+    "v8-compile-cache": "^2.3.0",
+    "yargs": "^17.1.1"
+  }
+}
